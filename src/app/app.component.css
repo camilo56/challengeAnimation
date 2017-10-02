@@ -1,0 +1,38 @@
+:host {
+  background: #17181c;
+}
+
+.container {
+  background: #17181c;
+}
+
+.containerImg{
+  width: 50vh;
+  height: 50vh;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vh;
+  position: relative;
+}
+img {
+  width: 100%;
+  position: absolute;
+}
+
+.contOptions {
+  display: flex;
+  margin-top: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border-color: #ef6eae;
+  color: #ef6eae;
+  background: none;
+  border: 4px solid;
+  font: 700;
+  line-height: 1;
+  margin: .5em;
+  padding: 1em 2em;
+}
