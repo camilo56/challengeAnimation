@@ -23,7 +23,7 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
           style({transform: 'rotateX(180deg)'}),
           style({transform: 'rotateX(0deg)'})
         ]))),
-        transition('normal => crazy', animate('4000ms',  keyframes([
+        transition('normal => crazy', animate('2000ms',  keyframes([
           style({transform: 'rotate(0deg)'}),
           style({transform: 'rotate(180deg)', height:  '60vh'}),
           style({transform: 'rotate(360deg)'}),
@@ -33,6 +33,21 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
           style({transform: 'rotate(1080deg)'}),
           style({transform: 'rotate(1280deg)', height:  '100vh'}),
           style({transform: 'rotate(1440deg)'}),
+        ]))),
+        transition('normal => hinge', animate('4000ms ease-in',  keyframes([
+          style({
+            'transform-origin': 'top left',
+            'animation-timing-function': 'ease-in-out'}),
+          style({'transform': 'rotate(80deg)',
+                  'transform-origin': 'top left',
+                  'animation-timing-function': 'ease-in-out'}),
+          style({'transform': 'rotate(60deg)',
+                  'transform-origin': 'top left',
+                  'animation-timing-function': 'ease-in-out',
+                  'opacity': 1}),
+          style({'transform': 'translate3d(0,700px,0)', 'opacity': 0}),
+          style({'transform-origin': 'top left',
+                  'animation-timing-function': 'ease-in-out'})
         ]))),
         transition('* => normal', animate('50ms ease-in')),
     ]),
