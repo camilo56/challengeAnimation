@@ -1,13 +1,13 @@
-<div class="container">
+<div class="container" [@opacity]="stateOne">
   <div class="containerImg">
-    <img [@camiloAnimation]='state' src="https://api.adorable.io/avatars/9999">
+    <img class="opacity" [@camiloAnimation]='state'  src="https://api.adorable.io/avatars/9999">
   </div>
 
   <div class="contOptions">
-    <button (mouseenter)="state = 'radius'" (mouseleave)="normalState()">Round out</button>
-    <button (mouseenter)="state = 'rote'" (mouseleave)="normalState()">Rotate</button>
-    <button (mouseenter)="state = 'hinge'" (mouseleave)="normalState()">Hinge</button>
-    <button (mouseenter)="state = 'crazy'" (mouseleave)="normalState()">Crazy Time</button>
-    <button>Bye!</button>
+    <button class="opacity" (mouseenter)="state = 'radius'" (mouseleave)="normalState()">Round out</button>
+    <button class="opacity" (mouseenter)="state = 'rote'" (mouseleave)="normalState()">Rotate</button>
+    <button class="opacity" (mouseenter)="state = 'hinge'" (mouseleave)="normalState()">Hinge</button>
+    <button class="opacity" (mouseenter)="state = 'crazy'" (mouseleave)="normalState()">Crazy Time</button>
+    <button class="opacity" (mouseenter)="stateOne = 'opOne'" (mouseleave)="normalState()">Bye!</button>
   </div>
 </div>
